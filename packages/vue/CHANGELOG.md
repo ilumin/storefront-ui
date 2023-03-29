@@ -3,6 +3,183 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.6](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.5...@storefront-ui/vue@0.13.6) (2022-12-14)
+
+**Note:** Version bump only for package @storefront-ui/vue
+
+
+
+
+
+## [0.13.5](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.4...@storefront-ui/vue@0.13.5) (2022-11-08)
+
+
+### Bug Fixes
+
+* restored changeHandler for Header ([08c5abb](https://github.com/vuestorefront/storefront-ui/commit/08c5abb9fc823419aec5bf8acb63dd5bb7ed415e))
+* Vue project no longer compiles with npm ([#2456](https://github.com/vuestorefront/storefront-ui/issues/2456)) ([baa492c](https://github.com/vuestorefront/storefront-ui/commit/baa492cb39206e0c3eceec3288dbbfbbdd3cdac9))
+
+
+
+
+
+## [0.13.4](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.3...@storefront-ui/vue@0.13.4) (2022-11-04)
+
+
+### Bug Fixes
+
+* Dropdown docs interactivity ([#2475](https://github.com/vuestorefront/storefront-ui/issues/2475)) ([b38dfe4](https://github.com/vuestorefront/storefront-ui/commit/b38dfe43ca7e7435a98e90bdaac298af7e89592a))
+* footer closing on mobile ([#2469](https://github.com/vuestorefront/storefront-ui/issues/2469)) ([b7350c8](https://github.com/vuestorefront/storefront-ui/commit/b7350c8e30124a65f7d3f1642420cb701eb4c838))
+* icon slot in searchbar ([#2468](https://github.com/vuestorefront/storefront-ui/issues/2468)) ([5521c6b](https://github.com/vuestorefront/storefront-ui/commit/5521c6b4a1c36d41f4c3eb635a1f8cb730df7203))
+* SfBullets and SfImage warnings instead of errors ([#2474](https://github.com/vuestorefront/storefront-ui/issues/2474)) ([3577896](https://github.com/vuestorefront/storefront-ui/commit/3577896b76afbb82c7def68b05bfa13adab79879))
+* SfGallery - for more than 4 thumbnails gallery is breaking ([#2477](https://github.com/vuestorefront/storefront-ui/issues/2477)) ([b49793b](https://github.com/vuestorefront/storefront-ui/commit/b49793bc0744d86b1f48b240a2e2c7d6293d2843))
+* storelocator marker fixed ([#2428](https://github.com/vuestorefront/storefront-ui/issues/2428)) ([1fb99e9](https://github.com/vuestorefront/storefront-ui/commit/1fb99e91b717f5f522f893fb640312d36d88b166))
+* Storybook Atoms Input placeholder prop does not work ([#2495](https://github.com/vuestorefront/storefront-ui/issues/2495)) ([31546bd](https://github.com/vuestorefront/storefront-ui/commit/31546bdaccd809387ed608a2421ab4d876e3b03b))
+* Storybook Molecules Modal cannot close the modal even with persistent turned off ([#2476](https://github.com/vuestorefront/storefront-ui/issues/2476)) ([668b2d8](https://github.com/vuestorefront/storefront-ui/commit/668b2d87ced527534f69c8cecbf86ce22224fbfc))
+* Storybook Organisms Header some props do not work ([#2496](https://github.com/vuestorefront/storefront-ui/issues/2496)) ([f2b3f45](https://github.com/vuestorefront/storefront-ui/commit/f2b3f459dc1b23a8f2b347fc20334e3accda5aa3))
+* typo in skeleton story ([#2438](https://github.com/vuestorefront/storefront-ui/issues/2438)) ([26e4f3e](https://github.com/vuestorefront/storefront-ui/commit/26e4f3e239fe31837fb2a069a9fb85bb60e3c790))
+* updated copy components script ([#2483](https://github.com/vuestorefront/storefront-ui/issues/2483)) ([be0632a](https://github.com/vuestorefront/storefront-ui/commit/be0632afab37800ceb200cf7e89a7c51468b43c6))
+
+
+### Features
+
+* cart sidebar emits closeSidebar ([823fb57](https://github.com/vuestorefront/storefront-ui/commit/823fb5729313656bf4560d0e04623d22e62978ba))
+
+
+
+
+
+## [0.13.3](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.2...@storefront-ui/vue@0.13.3) (2022-06-29)
+
+
+### Bug Fixes
+
+*  remove conditions for placeholder in sfimage ([#2452](https://github.com/vuestorefront/storefront-ui/issues/2452)) ([9c69d01](https://github.com/vuestorefront/storefront-ui/commit/9c69d0100f0070d2fc6047304799adb4d7393ee2))
+* apply pre-commit modifications ([#2353](https://github.com/vuestorefront/storefront-ui/issues/2353)) ([e64b5c7](https://github.com/vuestorefront/storefront-ui/commit/e64b5c7b4e407f773e10fa02dbadd8232da36ff8))
+* e2e test for login page ([#2444](https://github.com/vuestorefront/storefront-ui/issues/2444)) ([b0eef69](https://github.com/vuestorefront/storefront-ui/commit/b0eef693147d6a137a9ec1f804de0d964d99ff25))
+* event passed to closeHandler in click outside directive ([#2442](https://github.com/vuestorefront/storefront-ui/issues/2442)) ([f070c32](https://github.com/vuestorefront/storefront-ui/commit/f070c322852ee69ad5cff425811b9018e032a0d7))
+* lint fixes ([d31446f](https://github.com/vuestorefront/storefront-ui/commit/d31446f528a54e83f4a831128da179e77f864f86))
+* sfbutton with default slot story ([#2429](https://github.com/vuestorefront/storefront-ui/issues/2429)) ([59d11cf](https://github.com/vuestorefront/storefront-ui/commit/59d11cf496af6928082555ef3700c3cd385c393c))
+* SfGallery outside zoom ([#2422](https://github.com/vuestorefront/storefront-ui/issues/2422)) ([2f91ac7](https://github.com/vuestorefront/storefront-ui/commit/2f91ac7913989593e70376569aace2f4fdfa4fd6))
+* sfgtextarea readonly prop ([#2439](https://github.com/vuestorefront/storefront-ui/issues/2439)) ([ee4735c](https://github.com/vuestorefront/storefront-ui/commit/ee4735c0e6e56194c827d74eff86dc574da6b9f8))
+* sfinput showinf password ([7402013](https://github.com/vuestorefront/storefront-ui/commit/74020139d1049ef1746d9413e2762bfbf054c42d))
+
+
+### Reverts
+
+* Revert "#2261 - Configurable aria-label attributes (#2286)" ([3382c05](https://github.com/vuestorefront/storefront-ui/commit/3382c054ef5836c9bd9280c4346160054dc708c7)), closes [#2261](https://github.com/vuestorefront/storefront-ui/issues/2261) [#2286](https://github.com/vuestorefront/storefront-ui/issues/2286)
+
+## [0.13.2](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.1...@storefront-ui/vue@0.13.2) (2022-05-24)
+
+
+### Bug Fixes
+
+* add aria invalid and aria-required and aria-describedby attributes ([#2414](https://github.com/vuestorefront/storefront-ui/issues/2414)) ([f39a635](https://github.com/vuestorefront/storefront-ui/commit/f39a63592a874aefa19c77d586026b913fe9bf72))
+* change event name in story ([#2390](https://github.com/vuestorefront/storefront-ui/issues/2390)) ([2362ffe](https://github.com/vuestorefront/storefront-ui/commit/2362ffe7be1dcb3563e8f6849e79829ed024b610))
+* checkbox size in storybook ([#2391](https://github.com/vuestorefront/storefront-ui/issues/2391)) ([5aca101](https://github.com/vuestorefront/storefront-ui/commit/5aca101c9483bd7ac1ac57f76a47d6778ecf6d94))
+* color primary with better contrast ratio ([#2413](https://github.com/vuestorefront/storefront-ui/issues/2413)) ([2d8892f](https://github.com/vuestorefront/storefront-ui/commit/2d8892fd87500ff8055a7ae28f623623b2834722))
+* remove required prop from storybook ([#2395](https://github.com/vuestorefront/storefront-ui/issues/2395)) ([882899f](https://github.com/vuestorefront/storefront-ui/commit/882899f45565b3ca8e63df608eafa2d08a9f4cc6))
+* restored changes ([c3714a6](https://github.com/vuestorefront/storefront-ui/commit/c3714a6f6e1512602cbbf49cea28b77df8d53baa))
+* SfCheckbox required text is hidden ([#2394](https://github.com/vuestorefront/storefront-ui/issues/2394)) ([4a33ea7](https://github.com/vuestorefront/storefront-ui/commit/4a33ea7b8f7eec842ba4da4597a73ee115ea3387))
+* SfGroupedProduct error in console ([#2398](https://github.com/vuestorefront/storefront-ui/issues/2398)) ([522bab3](https://github.com/vuestorefront/storefront-ui/commit/522bab3b631158c8028fa149237d7772b6c0bab1))
+* SfSteps storybook navigation ([#2399](https://github.com/vuestorefront/storefront-ui/issues/2399)) ([28daccd](https://github.com/vuestorefront/storefront-ui/commit/28daccd8442b94eaa4cec9713c45b5792d4b33cf))
+* storelocator add marker icons ([#2403](https://github.com/vuestorefront/storefront-ui/issues/2403)) ([59b123b](https://github.com/vuestorefront/storefront-ui/commit/59b123be90123a36b6b7e985103aef3d94b3d76b))
+* update-components-docs regex ([#2352](https://github.com/vuestorefront/storefront-ui/issues/2352)) ([5595859](https://github.com/vuestorefront/storefront-ui/commit/5595859ff8348a4d591d05121370eeca953e0c9f))
+
+
+## [0.13.1](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.13.0...@storefront-ui/vue@0.13.1) (2022-04-26)
+
+
+### Bug Fixes
+
+* added changes in changelog entry ([ee8b95d](https://github.com/vuestorefront/storefront-ui/commit/ee8b95d3703299029aab909b6b2d5d37be4b6410))
+* bullets console error ([633c499](https://github.com/vuestorefront/storefront-ui/commit/633c4993103bd4848d4487ae5e5b3aa28474c5c7))
+* change style and heroitem to show mobile images ([#2371](https://github.com/vuestorefront/storefront-ui/issues/2371)) ([d348a64](https://github.com/vuestorefront/storefront-ui/commit/d348a645fcf0350d0f45a72dc5a9a512186824df))
+* input console errors ([d86fc28](https://github.com/vuestorefront/storefront-ui/commit/d86fc281f58dc322438aa6c09e5e451532816e9b))
+* outside zoom image size and position ([#2382](https://github.com/vuestorefront/storefront-ui/issues/2382)) ([f28be03](https://github.com/vuestorefront/storefront-ui/commit/f28be03ab247af0a571dfe2a6b915264d73d9466))
+* sfbottommodal story ([#2375](https://github.com/vuestorefront/storefront-ui/issues/2375)) ([7b800cc](https://github.com/vuestorefront/storefront-ui/commit/7b800ccf01813c6252d72722d3bd96439e69a2c9))
+* show desktop images in background ([#2372](https://github.com/vuestorefront/storefront-ui/issues/2372)) ([0525bcd](https://github.com/vuestorefront/storefront-ui/commit/0525bcd5d6d35064927f6e467c6a7a2bb7975b61))
+* the issue of change is not defined in accordion ([#2347](https://github.com/vuestorefront/storefront-ui/issues/2347)) ([d72115b](https://github.com/vuestorefront/storefront-ui/commit/d72115b5efa397583dad05a345b259b1e5abdf67))
+* the issue of onClick not defined in button ([a679252](https://github.com/vuestorefront/storefront-ui/commit/a67925228ba77295ad9b82c306b479cef1c51723))
+
+
+### Features
+
+* added new website ([#2368](https://github.com/vuestorefront/storefront-ui/issues/2368)) ([378754f](https://github.com/vuestorefront/storefront-ui/commit/378754f967d47c239da0934bdbff3bc5d0175e35))
+
+# [0.13.0](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.12.3...@storefront-ui/vue@0.13.0) (2022-03-21)
+
+
+### Bug Fixes
+
+* **SfSidebar:** fixed lazy loaded animation ([#2299](https://github.com/vuestorefront/storefront-ui/issues/2299)) ([a6144af](https://github.com/vuestorefront/storefront-ui/commit/a6144af3924ebfcb0fac49a3d9928be56535009c))
+* added changes in the latest changelog ([e7bb474](https://github.com/vuestorefront/storefront-ui/commit/e7bb474fa45f4b3efd4419db47b29142713eaffe))
+* conflict resolved ([704d9f8](https://github.com/vuestorefront/storefront-ui/commit/704d9f8b239e86a13e82393aba14ec986f5e5a93))
+* hotfix for leftovers merge conflicts ([8dfa688](https://github.com/vuestorefront/storefront-ui/commit/8dfa6882eb595cb718392c01e44c57007e287770))
+* sfCollectedProduct issue of input function in story ([c2b21f7](https://github.com/vuestorefront/storefront-ui/commit/c2b21f77a6c9e0e63fa1c910df7f8455f10c523b))
+* sfhero image passed as objects ([#2335](https://github.com/vuestorefront/storefront-ui/issues/2335)) ([e26d803](https://github.com/vuestorefront/storefront-ui/commit/e26d8039170b35ccfa41ef50b1e80d742ba66920))
+
+
+### Features
+
+* add mixins to change breakpoint and generate classes ([#2271](https://github.com/vuestorefront/storefront-ui/issues/2271)) ([7a3f1e8](https://github.com/vuestorefront/storefront-ui/commit/7a3f1e88f2d675453eb9b1bf17b93fb78af1cb02))
+* change gh action workflow ([#2323](https://github.com/vuestorefront/storefront-ui/issues/2323)) ([df20593](https://github.com/vuestorefront/storefront-ui/commit/df20593a9b70eedb92de7800ff36edcf12e94ec4))
+* isMobile removed from SfMegaMenu ([#2337](https://github.com/vuestorefront/storefront-ui/issues/2337)) ([3c373ed](https://github.com/vuestorefront/storefront-ui/commit/3c373ed21c95d751f235010ad5a66f63c7fb1c42))
+* lazy load SfIcon component ([#2307](https://github.com/vuestorefront/storefront-ui/issues/2307)) ([f3ebc81](https://github.com/vuestorefront/storefront-ui/commit/f3ebc81c8c6fc2b22316a6cb5e6e3419b666547c))
+* removed SfSlidingSection from the lib ([#2334](https://github.com/vuestorefront/storefront-ui/issues/2334)) ([47e5706](https://github.com/vuestorefront/storefront-ui/commit/47e570600e7fdc2749eba90bd35311488742b64c))
+* removed simplebar and replaced it with native solution ([5321c8a](https://github.com/vuestorefront/storefront-ui/commit/5321c8aaa4d09af3f1bd363459261b1404051fa4))
+* removed simplebar and replaced it with native solution ([#2336](https://github.com/vuestorefront/storefront-ui/issues/2336)) ([baa30df](https://github.com/vuestorefront/storefront-ui/commit/baa30df97875e1801c99b3e39ffe4c3db9020d2c))
+* storybook composition - allowing adding SFUI stories to third party projects ([#2260](https://github.com/vuestorefront/storefront-ui/issues/2260)) ([d5b646a](https://github.com/vuestorefront/storefront-ui/commit/d5b646a6344e0ab4f5dad214458662af7c8bbd57))
+
+## [0.12.3](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.12.2...@storefront-ui/vue@0.12.3) (2022-03-08)
+
+
+### Bug Fixes
+
+* accordion closing headers when multiple is used ([#2306](https://github.com/vuestorefront/storefront-ui/issues/2306)) ([5d3bb15](https://github.com/vuestorefront/storefront-ui/commit/5d3bb159c5bf64b9451103c58e9c0f8775a2c86b))
+* add url property to big image in pictureSelected ([#2298](https://github.com/vuestorefront/storefront-ui/issues/2298)) ([6163045](https://github.com/vuestorefront/storefront-ui/commit/61630454e624631c2c0ce1212f60b16a80110ef2))
+* color element ([3d3c3e0](https://github.com/vuestorefront/storefront-ui/commit/3d3c3e0ae6daccbd5607e80dccca709b284bf6a5))
+* conflict resolved ([897b815](https://github.com/vuestorefront/storefront-ui/commit/897b815b29d45b2b0e2b6aec7307fd7b3e621796))
+* conflict resolved ([6240ddf](https://github.com/vuestorefront/storefront-ui/commit/6240ddf323edd24c30e98d2c321d4e3f25198669))
+* cr fixes ([e16aeb5](https://github.com/vuestorefront/storefront-ui/commit/e16aeb5d4a4c2b18b9a7a17b0c7c1dca9e9d1206))
+* one color ([df5fde9](https://github.com/vuestorefront/storefront-ui/commit/df5fde91f55779f8e92d287ebc11f95e73ea0579))
+* one color only ([b9086a1](https://github.com/vuestorefront/storefront-ui/commit/b9086a183cf2d5897b91ba4253a05519a7e65d24))
+* the align-items property to start to make all the colors visible ([#2304](https://github.com/vuestorefront/storefront-ui/issues/2304)) ([057d449](https://github.com/vuestorefront/storefront-ui/commit/057d4498f9fa3c8b6ea51829d97115004f9cc07f))
+
+
+### Features
+
+* color picker added to home ([7ace72a](https://github.com/vuestorefront/storefront-ui/commit/7ace72aa92d4d44769f91e8e25a5d7f0657ccee5))
+* color picker on category page ([15d9fe5](https://github.com/vuestorefront/storefront-ui/commit/15d9fe5c0e5eb1960d55020f4974ac638082f1c1))
+
+
+## [0.12.2](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.12.1...@storefront-ui/vue@0.12.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* add timeout options to cypress config ([#2257](https://github.com/vuestorefront/storefront-ui/issues/2257)) ([6424fab](https://github.com/vuestorefront/storefront-ui/commit/6424fab503a35b03d5c51f624293be190a1292b1))
+* adding width and height when nuxt-img is used ([#2278](https://github.com/vuestorefront/storefront-ui/issues/2278)) ([75c2cf0](https://github.com/vuestorefront/storefront-ui/commit/75c2cf0291947bbaf504812e4f7e555778df9cf1))
+* changed date prop format to text in story ([#2265](https://github.com/vuestorefront/storefront-ui/issues/2265)) ([e47a683](https://github.com/vuestorefront/storefront-ui/commit/e47a683b43b72eae8c59a4ead7130535fa440e15))
+* exclude transpiling core-js from nuxt module ([#2266](https://github.com/vuestorefront/storefront-ui/issues/2266)) ([3e50d96](https://github.com/vuestorefront/storefront-ui/commit/3e50d96d0221d4eac908da7393ba7430e097aa98))
+* image-tag set to img for sfimage on nuxt ([#2253](https://github.com/vuestorefront/storefront-ui/issues/2253)) ([46b559a](https://github.com/vuestorefront/storefront-ui/commit/46b559a7d315c24297abb53494da9340c9e04c30))
+* mutating props error in stories ([#2256](https://github.com/vuestorefront/storefront-ui/issues/2256)) ([627de5c](https://github.com/vuestorefront/storefront-ui/commit/627de5c671a68215637a2a69e8abf728ea4b6a4b))
+* SfImage setting properties by props and custom properties when it's needed ([#2269](https://github.com/vuestorefront/storefront-ui/issues/2269)) ([d0640a1](https://github.com/vuestorefront/storefront-ui/commit/d0640a1298dc2e6ee0c01c7fb13f78e16e7e7b3f))
+* SfProductCardHorizontal - adjusted position of wishlist icon ([#2270](https://github.com/vuestorefront/storefront-ui/issues/2270)) ([aee5c89](https://github.com/vuestorefront/storefront-ui/commit/aee5c89a552f6b4c48d966e554928e34d460708c))
+* **sfgroupedproduct:** fix invalid styles for mobile view ([#2252](https://github.com/vuestorefront/storefront-ui/issues/2252)) ([129f15b](https://github.com/vuestorefront/storefront-ui/commit/129f15b7d25dbf41086a1ca3f9da3ff1baec7f51))
+* **srcset:** 'srcset' had an invalid attribute [#2216](https://github.com/vuestorefront/storefront-ui/issues/2216) ([e9d29ff](https://github.com/vuestorefront/storefront-ui/commit/e9d29ff52805a0cdb0aebee737b09eb1614a8622))
+
+
+### Features
+
+* allow setting height of SfModal content ([#2274](https://github.com/vuestorefront/storefront-ui/issues/2274)) ([9dbc345](https://github.com/vuestorefront/storefront-ui/commit/9dbc34557892c442c3b4d71248c92574fee53577))
+* change the docs tab to the first place in toolbar ([#2246](https://github.com/vuestorefront/storefront-ui/issues/2246)) ([9de2906](https://github.com/vuestorefront/storefront-ui/commit/9de2906054ede9ca10d057b6122980730d3142bb))
+* SfHero easier button customisation by css vars ([#2259](https://github.com/vuestorefront/storefront-ui/issues/2259)) ([174d1bb](https://github.com/vuestorefront/storefront-ui/commit/174d1bb651f060f5123314227c7fca85332b063d))
+
+
+
+
+
 ## [0.12.1](https://github.com/vuestorefront/storefront-ui/compare/@storefront-ui/vue@0.12.0...@storefront-ui/vue@0.12.1) (2022-02-07)
 
 

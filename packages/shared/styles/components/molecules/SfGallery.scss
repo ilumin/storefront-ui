@@ -37,13 +37,16 @@
     }
   }
   &__stage {
+    position: relative;
     flex: 1;
     max-width: var(--gallery-stage-width, 26.375rem);
   }
   &__zoom {
     position: absolute;
-    left: 50%;
-    top: 0;
+    pointer-events: none;
+    width: 12.5rem;
+    height: 12.5rem;
+    overflow: hidden;
   }
   .glide {
     &__slide {
@@ -64,6 +67,10 @@
       &:last-child {
         --gallery-item-margin: 0;
       }
+    }
+    &__thumbs {
+      overflow-y: scroll;
+      height: var(--gallery-image-height);
     }
   }
 }

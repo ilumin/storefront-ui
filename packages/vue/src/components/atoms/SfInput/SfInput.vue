@@ -6,11 +6,11 @@
       'has-text': !!value,
       invalid: !valid,
     }"
-    :data-testid="name"
+    :data-testid="nameWithoutWhitespace"
   >
     <div class="sf-input__wrapper">
       <input
-        :id="idWithoutWhitespace"
+        :id="nameWithoutWhitespace"
         v-focus
         v-bind="$attrs"
         :value="value"
@@ -19,13 +19,18 @@
         :name="name"
         :class="{ 'sf-input--is-password': isPassword }"
         :type="inputType"
+        :aria-invalid="!valid"
+        :aria-required="required"
+        :aria-describedby="
+          errorMessage ? `${nameWithoutWhitespace}-error` : null
+        "
         v-on="listeners"
       />
       <span class="sf-input__bar"></span>
       <label
         :class="{ 'display-none': !label }"
         class="sf-input__label will-change"
-        :for="name"
+        :for="nameWithoutWhitespace"
       >
         <slot name="label" v-bind="{ label }">{{ label }}</slot>
       </label>
@@ -38,8 +43,8 @@
         name="icon"
       >
         <SfButton
-          v-if="icon"
           class="sf-input__button sf-button--pure"
+          :class="{ 'display-none': !icon.icon || isPassword }"
           @click="$emit('click:icon')"
         >
           <SfIcon
@@ -51,11 +56,10 @@
           </SfIcon>
         </SfButton>
         <SfButton
-          v-else-if="hasShowPassword"
           :class="{ 'display-none': !isPassword }"
           class="sf-input__password-button"
           type="button"
-          aria-label="switch-visibility-password"
+          :aria-label="'switch-visibility-password'"
           :aria-pressed="isPasswordVisible.toString()"
           @click="switchVisibilityPassword"
         >
@@ -65,7 +69,8 @@
               hidden: !isPasswordVisible,
             }"
             icon="show_password"
-            size="1.5rem"
+            size="18px"
+            color="black"
           ></SfIcon>
         </SfButton>
       </slot>
@@ -73,8 +78,14 @@
     <div class="sf-input__error-message">
       <transition name="sf-fade">
         <slot name="error-message" v-bind="{ errorMessage }">
-          <div :class="{ 'display-none': valid }">{{ errorMessage }}</div></slot
-        >
+          <div
+            :id="`${nameWithoutWhitespace}-error`"
+            :class="{ 'display-none': valid }"
+            aria-live="assertive"
+          >
+            {{ errorMessage }}
+          </div>
+        </slot>
       </transition>
     </div>
   </div>
@@ -111,7 +122,9 @@ export default {
     },
     icon: {
       type: Object,
-      default: () => {},
+      default: () => {
+        return { icon: "" };
+      },
     },
     valid: {
       type: Boolean,
@@ -153,7 +166,7 @@ export default {
     isPassword() {
       return this.type === "password" && this.hasShowPassword;
     },
-    idWithoutWhitespace() {
+    nameWithoutWhitespace() {
       return this.name.replace(/\s/g, "");
     },
   },

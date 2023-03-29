@@ -51,7 +51,7 @@
                 :class="{ 'display-none': !accountIcon }"
                 class="sf-button--pure sf-header__action"
                 data-testid="accountIcon"
-                aria-label="Account"
+                :aria-label="'Account'"
                 @click="$emit('click:account')"
               >
                 <SfIcon
@@ -66,14 +66,12 @@
                 :class="{ 'display-none': !wishlistIcon }"
                 class="sf-button--pure sf-header__action"
                 data-testid="wishlistIcon"
-                aria-label="Wishlist"
+                :aria-label="'Wishlist'"
                 @click="$emit('click:wishlist')"
               >
                 <SfIcon
                   class="sf-header__icon"
                   :icon="wishlistIcon"
-                  :has-badge="wishlistHasProducts"
-                  :badge-label="wishlistItemsQty"
                   size="1.25rem"
                   :class="{
                     'sf-header__icon is-active': activeIcon === 'wishlist',
@@ -84,14 +82,12 @@
                 :class="{ 'display-none': !cartIcon }"
                 class="sf-button--pure sf-header__action"
                 data-testid="cartIcon"
-                aria-label="Cart"
+                :aria-label="'Cart'"
                 @click="$emit('click:cart')"
               >
                 <SfIcon
                   class="sf-header__icon"
                   :icon="cartIcon"
-                  :has-badge="cartHasProducts"
-                  :badge-label="cartItemsQty"
                   size="1.25rem"
                   :class="{
                     'sf-header__icon is-active': activeIcon === 'cart',
@@ -111,10 +107,6 @@ import SfHeaderNavigationItem from "./_internal/SfHeaderNavigationItem.vue";
 import SfHeaderNavigation from "./_internal/SfHeaderNavigation.vue";
 Vue.component("SfHeaderNavigation", SfHeaderNavigation);
 Vue.component("SfHeaderNavigationItem", SfHeaderNavigationItem);
-import {
-  mapMobileObserver,
-  unMapMobileObserver,
-} from "../../../utilities/mobile-observer";
 import { isClient } from "../../../utilities/helpers";
 import SfImage from "../../atoms/SfImage/SfImage.vue";
 import SfSearchBar from "../../molecules/SfSearchBar/SfSearchBar.vue";
@@ -204,7 +196,6 @@ export default {
     };
   },
   computed: {
-    ...mapMobileObserver(),
     cartHasProducts() {
       return parseInt(this.cartItemsQty, 10) > 0;
     },
@@ -238,7 +229,6 @@ export default {
     }
   },
   beforeDestroy() {
-    unMapMobileObserver();
     if (this.isSticky) {
       window.removeEventListener("scroll", this.scrollHandler, {
         passive: true,

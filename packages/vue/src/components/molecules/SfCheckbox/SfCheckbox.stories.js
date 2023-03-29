@@ -231,9 +231,15 @@ export default {
 const Template = (args, { argTypes }) => ({
   components: { SfCheckbox },
   props: Object.keys(argTypes),
+  data() {
+    return {
+      checked: this.selected,
+    };
+  },
   template: `
   <SfCheckbox 
-    v-model="selected"
+    v-model="checked"
+    style="--checkbox-container-width: 15rem;"
     :name="name"      
     :label="label"
     :hintMessage="hintMessage"
@@ -250,6 +256,7 @@ export const Common = Template.bind({});
 Common.args = {
   name: "shipping",
   label: "I want to create an account",
+  hintMessage: "Required.",
 };
 
 export const Selected = Template.bind({});
@@ -292,9 +299,15 @@ Disabled.args = {
 export const UseCheckmarkSlot = (args, { argTypes }) => ({
   components: { SfCheckbox },
   props: Object.keys(argTypes),
+  data() {
+    return {
+      checked: this.selected,
+    };
+  },
   template: `
   <SfCheckbox 
     v-model="checked"
+    style="--checkbox-container-width: 15rem;"
     :name="name"
     :label="label"
     :hintMessage="hintMessage"
@@ -311,15 +324,21 @@ export const UseCheckmarkSlot = (args, { argTypes }) => ({
 });
 UseCheckmarkSlot.args = {
   ...Common.args,
-  checked: true,
+  selected: true,
 };
 
 export const UseErrorMessageSlot = (args, { argTypes }) => ({
   components: { SfCheckbox },
   props: Object.keys(argTypes),
+  data() {
+    return {
+      checked: this.selected,
+    };
+  },
   template: `
   <SfCheckbox 
-    v-model="selected"
+    v-model="checked"
+    style="--checkbox-container-width: 15rem;"
     :name="name"      
     :label="label"
     :hint-message="hintMessage"
